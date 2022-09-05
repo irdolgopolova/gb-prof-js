@@ -1,0 +1,116 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+    background: #fff;
+    margin: 0;
+    height: inherit;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    height: 48px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.container {
+    width: 100%;
+    max-width: 1136px;
+    margin: auto;
+    height: inherit;
+}
+
+.header__container {
+    display: flex;
+    justify-content: right;
+}
+
+.header__botton_cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 86px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+.header__botton_cart:hover {
+    color: #0bb648;
+    fill: #0bb648;
+}
+
+.main {
+    margin: 48px 0 0;
+    height: inherit;
+}
+
+.products__title {
+    text-align: center;
+    padding: 34px 0;
+    font-size: 24px;
+}
+
+.products__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__list_card {
+    width: 100%;
+    max-width: 260px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products__list_card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.products__list_card__img_block {
+    min-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products__list_card__img {
+    width: 100%;
+    max-width: 130px;
+    height: max-content;
+}
+
+.products__list_card__title {
+    margin: 4px 0;
+}
+
+.products__list_card__price {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.products__list_card__btn {
+    background-color: #0bb648;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+    padding: 8px 20px;
+}
+
+.products__list_card__btn:hover {
+    background-color: #fff;
+    color: #0bb648;
+}
