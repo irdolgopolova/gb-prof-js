@@ -26,9 +26,16 @@ class ProductList {
                 {
                     id: 4,
                     title: 'Phone',
-                    price: 150000
+                    price: 15000
                 }
             ];
+    }
+
+    getTotalPrice() {
+        let totalPrice = this.goods
+            .reduce((totalPrice, product) => totalPrice + product.price, 0);
+
+        return totalPrice;
     }
 
     render() {
@@ -39,7 +46,6 @@ class ProductList {
         }
     }
 }
-
 
 class ProductItem {
     constructor(product) {
@@ -62,5 +68,38 @@ class ProductItem {
             </div>`;
     }
 }
+
+class productСart {
+    constructor() {}
+
+    /**
+     * Добавление товара в корзину
+     */
+    addProduct() {}
+
+    /**
+     * Изменение товара в корзине
+     */
+    changeProduct() {}
+
+    /**
+     * Удаление товара из корзины
+     */
+    deleteProduct() {}
+
+    /**
+     * Удаление всех товаров из корзины
+     */
+    clear() {}
+
+    render() {}
+}
+
+class productСartItem {
+    constructor() {}
+
+    render() {}
+}
+
 
 let list = new ProductList();
