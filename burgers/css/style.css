@@ -1,0 +1,102 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+    background: #fff;
+    margin: 0;
+    height: inherit;
+}
+
+.header {
+    height: 74px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.container {
+    width: 100%;
+    max-width: 1232px;
+    margin: auto;
+    height: inherit;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    max-width: 1232px;
+
+}
+
+.header__logo {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.burger_constructor {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0 0;
+}
+
+.burger_constructor__img {
+    background: lightgrey;
+    padding: 32px;
+    margin: 0 36px 0;
+    width: 100%;
+}
+
+.burger_constructor__calc {
+    min-width: 568px;
+}
+
+.burger_constructor__calc__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 52px;
+    margin: 0;
+}
+
+.burger_constructor__calc__form > fieldset {
+    margin: 20px 0;
+    padding: 12px;
+}
+
+.burger_constructor__calc__btn {
+    width: 240px;
+    height: 46px;
+    color: #fff;
+    background: #F9001F;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    border: none;
+}
+
+.burger_constructor__calc__btn:hover {
+    background: #f20632;
+}
+
+#required-error {
+    margin: 4px;
+    color: #F9001F;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.burger_constructor__results {
+    display: none;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 20px 0;
+}

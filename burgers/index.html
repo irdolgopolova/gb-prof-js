@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <span class="header__logo">РосБургер</span>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="burger_constructor">
+                <img class="burger_constructor__img" src="img/burger.jpg">
+                <div class="burger_constructor__calc">
+                    <h1 class="burger_constructor__calc__title">Тот самый</h1>
+                    <form class="burger_constructor__calc__form" action="#">
+                        <fieldset class="burger_size__list">
+                            <legend>Выберите размер</legend>
+
+                            <input id="big-size" class="burger_size__list__input" type="radio" name="size-btn" data-value="big" checked>
+                            <label class="burger_size__list__label" for="big-size">Большой</label>
+
+                            <input id="small-size" class="burger_size__list__input" type="radio" name="size-btn" data-value="small">
+                            <label class="burger_size__list__label" for="small-size">Маленький</label>
+                        </fieldset>
+
+                        <fieldset class="burger_stuffing__list">
+                            <legend>Выберите начинку</legend>
+
+                            <input id="cheese-stuffing" class="burger_stuffing__list__input" type="checkbox" name="topping-btn" data-value="cheese" checked>
+                            <label class="burger_stuffing__list__label" for="cheese-stuffing">С сыром</label>
+
+                            <input id="salad-stuffing" class="burger_stuffing__list__input" type="checkbox" name="topping-btn" data-value="salad">
+                            <label class="burger_stuffing__list__label" for="salad-stuffing">С салатом</label>
+
+                            <input id="potato-stuffing" class="burger_stuffing__list__input" type="checkbox" name="topping-btn" data-value="potato">
+                            <label class="burger_stuffing__list__label" for="potato-stuffing">С картофелем</label>
+                        </fieldset>
+
+                        <fieldset class="burger_topping__list">
+                            <legend>Выберите добавку</legend>
+
+                            <input id="seasoning-topping" class="burger_topping__list__input" type="checkbox" name="topping-btn" data-value="seasoning" checked>
+                            <label class="burger_topping__list__label" for="seasoning-topping">Посыпать приправой</label>
+
+                            <input id="mayonnaise-topping" class="burger_topping__list__input" type="checkbox" name="topping-btn" data-value="mayonnaise">
+                            <label class="burger_topping__list__label" for="mayonnaise-topping">Полить майонезом</label>
+                        </fieldset>
+
+                        <button class="burger_constructor__calc__btn" type="button">Рассчитать</button>
+                    </form>
+                    <p class="burger_constructor__results">
+                        Калории: <span class="calories"></span>
+                        Цена: <span class="price"></span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script src="js/main.js"></script>
