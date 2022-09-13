@@ -31,8 +31,66 @@ body {
 
 .header__container {
     display: flex;
-    justify-content: right;
+    width: 100%;
+    max-width: 1136px;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.header__logo {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 900;
+}
+
+.header__info {
+    display: flex;
+    width: 50%;
+    max-width: 500px;
+    justify-content: right;
+    align-items: center;
+}
+
+.header__search_form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: normal;
+    margin: 0 0 0 41px;
+  }
+
+.header__search_label {
+    display: block;
+  }
+  .header__search_input {
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    min-height: 0;
+    padding: 5px;
+    margin: 0 0 0 24px;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: #666;
+  }
+  .header__search_input:focus {
+    width: 250px;
+    min-height: 28px;
+    box-sizing: border-box;
+    transition: width 1s ease;
+    border: 2px solid #0bb648;
+  }
+  .header__search_input::-webkit-search-decoration,
+  .header__search_input::-webkit-search-cancel-button,
+  .header__search_input::-webkit-search-results-button,
+  .header__search_input::-webkit-search-results-decoration,
+  .header__search_input::-webkit-clear-button {
+    -webkit-appearance: none;
+    display: none;
+  }
 
 .header__botton_cart {
     display: flex;
@@ -40,7 +98,7 @@ body {
     align-items: center;
     width: 100%;
     max-width: 86px;
-    margin: 0;
+    margin: 0 0 0 24px;
     padding: 0;
     background-color: transparent;
     border: 0;
