@@ -9,6 +9,8 @@ class ProductList {
                 this.goods = data;
                 this.render();
             });
+
+        this.filtered = [];
     }
 
     _featchProducts() {
@@ -24,6 +26,24 @@ class ProductList {
             .reduce((totalPrice, product) => totalPrice + product.price, 0);
 
         return totalPrice;
+    }
+
+    filter(value) {
+        const regexp = new RegExp(value, 'i');
+
+        this.filtered = this.goods.filter(product => regexp.test(product.product_name));
+
+        this.goods.forEach(good => {
+            const product = document.querySelector(`.products__list_card[data-id="${good.id_product}"]`);
+
+            if (!this.filtered.includes(good)) {
+                product.classList.add('hide_block');
+            } else {
+                console.log(product);
+
+                product.classList.remove('hide_block');
+            }
+        });
     }
 
     render() {
@@ -45,6 +65,14 @@ class ProductList {
                     productСart.addProduct(Number(event.target.dataset.id))
                 )
             );
+
+        document
+            .querySelector('.header__search_form')
+            .addEventListener('submit', event => {
+                event.preventDefault();
+                console.log('filteresd');
+                this.filter(document.querySelector('.header__search_input').value);
+            });
     }
 }
 
@@ -57,7 +85,7 @@ class ProductItem {
     }
 
     render() {
-        return `<div class="products__list_card">
+        return `<div class="products__list_card" data-id="${this.id}">
                 <div class="products__list_card__img_block">
                     <img class="products__list_card__img" src="${this.imgLink}">
                 </div>

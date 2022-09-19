@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="title">Использование регулярных выражений</h1>
+
+    <div class="texts">
+        <label class="texts__label" for="original-text">Начальный текст:</label>
+        <textarea class="texts__textarea" id="original-text" placeholder="Введите текст..."></textarea>
+
+        <label class="texts__label" for="final-text">Итоговый текст:</label>
+        <textarea class="texts__textarea" id="final-text" readonly></textarea>
+    </div>
+
+    <div class="group_btn">
+        <button class="replace_btn replace_all">Заменить все ковычки</button>
+        <button class="replace_btn replace_apostrophe">Заменить только апострофы</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
