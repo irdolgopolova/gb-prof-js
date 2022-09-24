@@ -119,8 +119,9 @@ body {
     border-radius: 4px;
 }
 
-.hide_block {
-    display: none;
+.cart__info_block__empty {
+    margin: 20px 0;
+    text-align: center;
 }
 
 .cart__info_block__card {
