@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__logo">E-shop</div>
+                <div class="header__info">
+                    <filter_products ref="product_filter"></filter_products>
+
+                    <cart ref="cart"></cart>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section class="products">
+                    <h1 class="products__title">Подборки товаров</h1>
+                    <products_list ref="product_list"></products_list>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <script src="js/components/ProductComponent.js"></script>
+    <script src="js/components/CartComponent.js"></script>
+    <script src="js/components/FilterComponent.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
