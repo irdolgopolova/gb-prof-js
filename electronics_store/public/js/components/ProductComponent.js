@@ -9,7 +9,7 @@ const product_item = {
             <p class="products__list_card__title">{{product.product_name}}</p>
             <p class="products__list_card__price">{{product.price}}</p>
         </div>
-        <button class="products__list_card__btn" @click="$root.$refs.cart.addProduct(product)" data-id="product.id_product">Купить</button>
+        <button class="products__list_card__btn" @click="$root.$refs.cart.addProduct(product)" :data-id="product.id_product">Купить</button>
     </div>
     `
 };

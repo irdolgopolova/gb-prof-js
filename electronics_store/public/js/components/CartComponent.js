@@ -43,7 +43,7 @@ const cart = {
                         }
                     });
             } else {
-                const product = Object.assign({quantity: 1}, item);
+                const product = Object.assign({quantity: 1}, element);
                 this.$parent.postJson(`/api/cart`, product)
                     .then(data => {
                         if(data.result === 1){
@@ -67,7 +67,7 @@ const cart = {
                 this.$parent.deleteJson(`/api/cart/${element.id_product}`, find)
                     .then(data => {
                         if (data.result === 1) {
-                            this.cartItems.splice( this.cartItems.indexOf( product ), 1 );
+                            this.cartProducts.splice(this.cartProducts.indexOf(find), 1);
                         }
                     });
             }
